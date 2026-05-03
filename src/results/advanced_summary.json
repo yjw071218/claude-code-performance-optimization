@@ -1,0 +1,36 @@
+{
+  "total_trials": 5040,
+  "profiles": 14,
+  "scenarios": 2,
+  "seed": 20260503,
+  "profiles_tested": [
+    "Baseline v1.0",
+    "OPT1: Context Compression",
+    "OPT1+2: Async Discovery",
+    "OPT1+2+3: Manifest Caching",
+    "OPT1+2+3+4: Incremental",
+    "OPT1+2+3+4+5: Full Stack",
+    "ADV1: Batch Discovery",
+    "ADV2: Request Batching",
+    "ADV3: Predictive Caching",
+    "ADV4: Adaptive Compression",
+    "ADV5: Tool Grouping",
+    "ADV6: Priority Queue",
+    "ADV7: Lazy Validation",
+    "ULTRA: All Techniques Combined"
+  ],
+  "findings": {
+    "server_scaling": {
+      "best_profile": "ADV6: Priority Queue",
+      "best_latency_ms": 77.14622333332954,
+      "improvements": {},
+      "baseline_50_ms": 183.99183333325104
+    },
+    "context_scaling": {
+      "best_profile": "ADV7: Lazy Validation",
+      "best_latency_ms": 91.10029000003124,
+      "improvements": {},
+      "baseline_1024kb_ms": 154.6695766666744
+    }
+  }
+}
