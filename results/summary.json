@@ -1,0 +1,16 @@
+{
+  "seed": 20260503,
+  "trials_per_point": 25,
+  "server_scaling_reference": {
+    "baseline_mean_latency_ms_at_10_servers": 61.813,
+    "baseline_mean_latency_ms_at_20_servers": 77.232,
+    "baseline_mean_latency_ms_at_50_servers": 139.108,
+    "optimized_mean_latency_ms_at_50_servers": 77.814,
+    "baseline_linear_slope_ms_per_server_over_10_to_50": 1.9980099999999998
+  },
+  "context_scaling_reference": {
+    "baseline_mean_latency_ms_at_1024kb": 170.274,
+    "optimized_mean_latency_ms_at_1024kb": 93.019,
+    "latency_reduction_percent_at_1024kb": 45.37099028624452
+  }
+}
